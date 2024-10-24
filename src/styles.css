@@ -1,0 +1,92 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  border: 1px solid black;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mainPic {
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.address {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.availability {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.description-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.description-button:hover {
+  background-color: #3e8e41;
+}
+
+.description-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.description-box p {
+  margin-bottom: 10px;
+}

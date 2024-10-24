@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#000000">
+	<!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+	<!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link rel="stylesheet" href="/src/styles.css">
+	<title>FE Challenge</title>
+</head>
+
+<body>
+	<noscript>
+		You need to enable JavaScript to run this app.
+	</noscript>
+	<div id="root"></div>
+	<!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->   
+          <div id="root"></div>
+          <script type="text/babel">
+              function App() {
+                  return (
+                      <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+                          <div className="relative">
+                              <img className="h-full w-full object-cover" src="https://images.prismic.io/99-content/dc1594fb-f413-44ff-b8b5-c3ba6cd539cd_vbWkNuxt2hjgidVttoMRDX.jpg?auto=compress,format&w=2000&q=100" alt="99.CO"/>
+                              <div className="absolute top-0 left-0 bg-pink-500 text-white text-xs font-semibold px-2 py-1 rounded-br-lg">LAUNCHING SOON</div>
+                          </div>
+                          <div className="p-4">
+                              <div className="flex justify-between items-center">
+                                <div className="flex items-center">
+                                  <img src="./building-icon.svg" alt="" className="w-6 mr-2"/>
+                                    <div>
+                                      <h1 className="text-xl font-bold text-gray-800">Forett At Bukit Timah</h1>
+                                      <p className="text-gray-500">70 Anchorvale Crescent · D21</p>
+                                    </div>
+                                  </div>
+                                  <div className="text-right">
+                                      <p className="text-lg font-semibold text-gray-900">$2,609 - $3,043 psf</p>
+                                      <p className="text-gray-600">Prices from $1.99M</p>
+                                  </div>
+                              </div>
+                              <div className="flex items-center mt-2">
+                                  <p className="text-gray-600 mt-1">Condo · 2021 · Freehold</p>
+                              </div>
+                              <p className="text-gray-600 mt-1">231 units · 1, 2, 3, 4 bedrooms</p>
+                              <div className="flex justify-end items-center mt-4">
+                                  <a href="#" className="text-blue-500 font-semibold">See description</a>
+                              </div>
+                          </div>
+                      </div>
+                  );
+              }
+              ReactDOM.render(<App />, document.getElementById('root'));
+          </script>
+</body>
+
+</html>
